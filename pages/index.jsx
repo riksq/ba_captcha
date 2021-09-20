@@ -30,9 +30,15 @@ export default function Home() {
         height: "40px",
     };
 
-    const redirect = (some) => {
+    const redirect = async (some) => {
         if (some) {
-            window.location.href="https://google.com";
+            const fetchResp = await fetch("/api/hello");
+            const fJson = await fetchResp.json();
+            if (fJson.ok) {
+                window.location.href = fJson.url;
+            } else {
+                alert("Попробуйте снова");
+            }
         } else {
             alert("Попробуйте снова");
         }
