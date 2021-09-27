@@ -45,8 +45,10 @@ export default function Home() {
             alert("Попробуйте снова");
         }
     };
+    
     useEffect(() => {
-        TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
+        // TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
+        TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
     }, []);
     return (
         <div className={styles.container}>
