@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useHistory } from "react-router-dom";
+import TagManager from "react-gtm-module";
 
 export default function Home() {
     const history = useHistory();
@@ -43,6 +44,9 @@ export default function Home() {
             alert("Попробуйте снова");
         }
     };
+    useEffect(() => {
+        TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
+    }, []);
     return (
         <div className={styles.container}>
             <Head>
