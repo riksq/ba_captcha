@@ -1,12 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useHistory } from "react-router-dom";
 import TagManager from "react-gtm-module";
 import { useEffect } from "react";
 
 export default function Home() {
-    const history = useHistory();
     const blackcss = {
         margin: 10,
         border: "0px",
@@ -48,7 +45,8 @@ export default function Home() {
     
     useEffect(() => {
         // TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
-        TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
+        // TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
+        TagManager.initialize({ gtmId: "GTM-K4TGQMH" });
     }, []);
     return (
         <div className={styles.container}>
