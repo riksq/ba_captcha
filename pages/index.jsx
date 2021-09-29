@@ -43,11 +43,11 @@ export default function Home() {
         }
     };
     
-    useEffect(() => {
-        // TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
-        // TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
-        TagManager.initialize({ gtmId: "GTM-K4TGQMH" });
-    }, []);
+    // useEffect(() => {
+    //     // TagManager.initialize({ gtmId: "GTM-KD7H4RT" });
+    //     // TagManager.initialize({ gtmId: "GTM-59WP5XJ" });
+    //     TagManager.initialize({ gtmId: "GTM-K4TGQMH" });
+    // }, []);
     return (
         <div className={styles.container}>
             <Head>
