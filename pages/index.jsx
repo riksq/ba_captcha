@@ -68,7 +68,7 @@ export default function Home() {
                     </h2>
                 </div>
                 <div>
-                    <h3>Нажмите красную кнопку</h3>
+                    <h3>Нажмите КРАСНУЮ кнопку</h3>
                     <div>
                         <button
                             onClick={() => {
@@ -76,7 +76,7 @@ export default function Home() {
                             }}
                             style={blackcss}
                         >
-                            Черная
+                            ЧЕРНАЯ
                         </button>
                     </div>
                     <div>
@@ -86,7 +86,7 @@ export default function Home() {
                             }}
                             style={bluecss}
                         >
-                            Синяя
+                            СИНЯЯ
                         </button>
                     </div>
                     <div>
@@ -96,7 +96,7 @@ export default function Home() {
                             }}
                             style={redcss}
                         >
-                            Красная
+                            КРАСНАЯ
                         </button>
                     </div>
                 </div>
